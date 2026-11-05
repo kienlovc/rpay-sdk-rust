@@ -1,0 +1,19 @@
+[package]
+name = "rpay-sdk"
+version = "1.0.0"
+edition = "2021"
+authors = ["RPAY Platform <support@rpay.vn>"]
+description = "Official RPAY Payment & Banking SDK for Rust (Axum, Actix-web, Tauri, Tokio) — Unified Bank (VietQR 15 Banks) & Crypto (USDT/USDC 18 Networks), Multi-Domain White-Label, LSGD & HMAC-SHA256 Webhooks."
+license = "MIT"
+repository = "https://github.com/kienlovc/rpay-sdk-rust"
+homepage = "https://rpay.vn"
+keywords = ["rpay", "vietqr", "usdt", "payment", "banking"]
+categories = ["api-bindings", "web-programming", "cryptography"]
+
+[dependencies]
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hmac = "0.12"
+sha2 = "0.10"
+hex = "0.4"
